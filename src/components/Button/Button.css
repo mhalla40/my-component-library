@@ -47,6 +47,7 @@ button {
 .button-default:hover {
   background-color: #13161a;
 }
+/*the start of outline buttons*/
 
 .button-outline-primary {
   background-color: white;
@@ -70,6 +71,109 @@ button {
   color: #22262a;
 }
 
-.button-large {
+/*start of faded buttons*/
+.button-faded-primary {
+  background-color: #eaf5ff;
+  color: #33a0ff;
+  border: none;
+}
+
+.button-faded-danger {
+  background-color: #ffecee;
+  color: #ff4858;
+  border: none;
+}
+.button-faded-success {
+  background-color: #e6fae6;
+  color: #0ad00a;
+  border: none;
+}
+.button-faded-warning {
+  background-color: #fff9e5;
+  color: #ffc600;
+  border: none;
+  border: none;
+}
+.button-faded-default {
+  background-color: #f6f7f8;
+  color: #22262a;
+  border: none;
+}
+
+/*start of large buttons*/
+
+.button-large-primary {
+  padding: 10px 50px;
+}
+.button-large-danger {
+  padding: 10px 50px;
+}
+.button-large-success {
+  padding: 10px 50px;
+}
+.button-large-warning {
+  padding: 10px 50px;
+}
+.button-large-default {
+  padding: 10px 50px;
+}
+
+/*start of large tinted buttons*/
+.button-tinted-primary {
+  background-color: #eaf5ff;
+  color: #33a0ff;
+  padding: 10px 50px;
+  border: none;
+}
+.button-tinted-danger {
+  background-color: #ffecee;
+  color: #ff4858;
+  padding: 10px 50px;
+  border: none;
+}
+.button-tinted-success {
+  background-color: #e6fae6;
+  color: #0ad00a;
+  padding: 10px 50px;
+  border: none;
+}
+.button-tinted-warning {
+  background-color: #fff9e5;
+  color: #ffc600;
+  padding: 10px 50px;
+  border: none;
+}
+.button-tinted-default {
+  background-color: #f6f7f8;
+  color: #22262a;
+  padding: 10px 50px;
+  border: none;
+}
+
+/*start of border buttons*/
+.button-border-primary {
+  background-color: white;
+  color: #33a0ff;
+  padding: 10px 50px;
+}
+
+.button-border-danger {
+  background-color: white;
+  color: #ff4858;
+  padding: 10px 50px;
+}
+.button-border-success {
+  background-color: white;
+  color: #0ad00a;
+  padding: 10px 50px;
+}
+.button-border-warning {
+  background-color: white;
+  color: #ffc600;
+  padding: 10px 50px;
+}
+.button-border-default {
+  background-color: white;
+  color: #22262a;
   padding: 10px 50px;
 }

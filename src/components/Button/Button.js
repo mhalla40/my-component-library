@@ -10,10 +10,19 @@ const Button = (props) => {
     classList += `button-${props.type}`;
   }
   if (props.large) {
-    classList += ` button-large`; // Note the spacing here since we are adding to the string!
+    classList += ` button-large-${props.type}`; // Note the spacing here since we are adding to the string!
   }
   if (props.outline) {
     classList += ` button-outline-${props.type}`;
+  }
+  if (props.faded) {
+    classList += ` button-faded-${props.type}`;
+  }
+  if (props.tinted) {
+    classList += ` button-tinted-${props.type}`;
+  }
+  if (props.border) {
+    classList += ` button-border-${props.type}`;
   }
 
   return (
