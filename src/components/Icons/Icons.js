@@ -4,13 +4,17 @@ import "./Icons.css";
 const Icons = (props) => {
   let classList = "";
 
-  let types = ["cart", "favorites"];
+  let types = ["icon"];
 
   if (types.includes(props.type)) {
-    classList += `icons-${props.type}`;
+    classList += `icon`;
   }
 
-  return <button className={classList}>{props.label}</button>;
+  return (
+    <button className={classList}>
+      <img src={props.img} /> {props.label}
+    </button>
+  );
 };
 
 export default Icons;

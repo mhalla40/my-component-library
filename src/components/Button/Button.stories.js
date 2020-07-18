@@ -43,16 +43,34 @@ storiesOf("Button", module)
   .add("Large Warning", () => <Button type="warning" large label="Warning" />)
   .add("Large Default", () => <Button type="default" large label="Default" />)
 
-  .add("Tinted Primary", () => <Button type="primary" tinted label="Primary" />)
-  .add("Tinted Danger", () => <Button type="danger" tinted label="Danger" />)
-  .add("Tinted Success", () => <Button type="success" tinted label="Success" />)
-  .add("Tinted Warning", () => <Button type="warning" tinted label="Warning" />)
-  .add("Tinted Default", () => <Button type="default" tinted label="Default" />)
+  .add("Large Faded Primary", () => (
+    <Button type="primary" large faded label="Primary" />
+  ))
+  .add("Large Faded Danger", () => (
+    <Button type="danger" large faded label="Danger" />
+  ))
+  .add("Large Faded Success", () => (
+    <Button type="success" large faded label="Success" />
+  ))
+  .add("Large Faded Warning", () => (
+    <Button type="warning" large faded label="Warning" />
+  ))
+  .add("Large Faded Default", () => (
+    <Button type="default" large faded label="Default" />
+  ))
 
-  .add("Border Primary", () => <Button type="primary" border label="Primary" />)
-  .add("Border Danger", () => <Button type="danger" border label="Danger" />)
-  .add("Border Success", () => <Button type="success" border label="Success" />)
-  .add("Border Warning", () => <Button type="warning" border label="Warning" />)
-  .add("Border Default", () => (
-    <Button type="default" border label="Default" />
+  .add("Large Outline Primary", () => (
+    <Button type="primary" large outline label="Primary" />
+  ))
+  .add("Large Outline Danger", () => (
+    <Button type="danger" large outline label="Danger" />
+  ))
+  .add("Large Outline Success", () => (
+    <Button type="success" large outline label="Success" />
+  ))
+  .add("Large Outline Warning", () => (
+    <Button type="warning" large outline label="Warning" />
+  ))
+  .add("Large Outline Default", () => (
+    <Button type="default" large outline label="Default" />
   ));

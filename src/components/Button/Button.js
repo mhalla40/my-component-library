@@ -15,15 +15,6 @@ const Button = (props) => {
   if (props.outline) {
     classList += ` button-outline-${props.type}`;
   }
-  if (props.faded) {
-    classList += ` button-faded-${props.type}`;
-  }
-  if (props.tinted) {
-    classList += ` button-tinted-${props.type}`;
-  }
-  if (props.border) {
-    classList += ` button-border-${props.type}`;
-  }
 
   return (
     <button className={classList} onClick={props.whenClicked}>
