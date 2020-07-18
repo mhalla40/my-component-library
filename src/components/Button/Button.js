@@ -15,7 +15,6 @@ const Button = (props) => {
   if (props.outline) {
     classList += ` button-outline-${props.type}`;
   }
-
   return (
     <button className={classList} onClick={props.whenClicked}>
       {props.label}

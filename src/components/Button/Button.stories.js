@@ -37,12 +37,14 @@ storiesOf("Button", module)
   .add("Faded Warning", () => <Button type="warning" faded label="Warning" />)
   .add("Faded Default", () => <Button type="default" faded label="Default" />)
 
+  //large buttons
   .add("Large Primary", () => <Button type="primary" large label="Primary" />)
   .add("Large Danger", () => <Button type="danger" large label="Danger" />)
   .add("Large Success", () => <Button type="success" large label="Success" />)
   .add("Large Warning", () => <Button type="warning" large label="Warning" />)
   .add("Large Default", () => <Button type="default" large label="Default" />)
 
+  //large faded buttons
   .add("Large Faded Primary", () => (
     <Button type="primary" large faded label="Primary" />
   ))
@@ -59,6 +61,7 @@ storiesOf("Button", module)
     <Button type="default" large faded label="Default" />
   ))
 
+  //large outline buttons
   .add("Large Outline Primary", () => (
     <Button type="primary" large outline label="Primary" />
   ))
