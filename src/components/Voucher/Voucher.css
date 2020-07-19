@@ -1,0 +1,11 @@
+.box {
+  display: flex;
+  flex-direction: row;
+}
+
+label {
+  background-color: #33a0ff;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 15px;
+}

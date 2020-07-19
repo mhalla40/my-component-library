@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Counter.css";
-import Button from "../Button/Button";
+// import Button from "../Button/Button";
 
 class Counter extends Component {
   constructor(props) {
@@ -9,27 +9,32 @@ class Counter extends Component {
       count: 0,
     };
   }
-  increaseCount = () => {
-    let count = this.state.count + 1;
-    this.setState({
-      count: count,
-    });
-  };
-  decreaseCount = () => {
-    let count = this.state.count - 1;
-    this.setState({
-      count: count,
-    });
-  };
+
   render() {
     return (
       <div className="counter">
-        <Button onClick={this.decreaseCount} label="-" />
+        <button onClick={this.decreaseCount}>-</button>
         <p className="count">{this.state.count}</p>
-        <Button onClick={this.increaseCount} label="+" />
+        <button onClick={this.increaseCount}>+</button>
       </div>
     );
   }
+  increaseCount = () => {
+    let newCount = this.state.count + this.props.step;
+    if (this.state.count + this.props.step <= this.props.max) {
+      this.setState({
+        count: newCount,
+      });
+    }
+  };
+  decreaseCount = () => {
+    let newCount = this.state.count - this.props.step;
+    if (this.state.count - this.props.step >= this.props.min) {
+      this.setState({
+        count: newCount,
+      });
+    }
+  };
 }
 
 export default Counter;
