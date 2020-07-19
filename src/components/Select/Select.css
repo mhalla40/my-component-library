@@ -1,0 +1,17 @@
+.select-small {
+  width: 100px;
+}
+
+.select-medium {
+  width: 20%;
+  height: 30px;
+}
+
+.select-large {
+  width: 20%;
+  height: 40px;
+}
+
+.select-grey {
+  background-color: lightgray;
+}
